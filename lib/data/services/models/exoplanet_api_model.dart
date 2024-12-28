@@ -5,6 +5,7 @@ part 'exoplanet_api_model.g.dart';
 
 @freezed
 class ExoplanetApiModel with _$ExoplanetApiModel {
+  @JsonSerializable(fieldRename: FieldRename.snake)
   const factory ExoplanetApiModel({
     String? discFacility,
     String? syPlxerr2,

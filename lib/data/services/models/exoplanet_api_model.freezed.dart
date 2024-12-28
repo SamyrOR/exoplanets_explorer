@@ -3836,7 +3836,8 @@ class __$$ExoplanetApiModelImplCopyWithImpl<$Res>
 }
 
 /// @nodoc
-@JsonSerializable()
+
+@JsonSerializable(fieldRename: FieldRename.snake)
 class _$ExoplanetApiModelImpl implements _ExoplanetApiModel {
   const _$ExoplanetApiModelImpl(
       {this.discFacility,
