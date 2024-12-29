@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'exoplanet_model.dart';
+part of 'exoplanet.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$ExoplanetModel {
+mixin _$Exoplanet {
   String get hostName => throw _privateConstructorUsedError;
   String get planetName => throw _privateConstructorUsedError;
   String get planetLetter => throw _privateConstructorUsedError;
@@ -43,18 +43,17 @@ mixin _$ExoplanetModel {
   DateTime get dateLastUpdate => throw _privateConstructorUsedError;
   DateTime get releaseDate => throw _privateConstructorUsedError;
 
-  /// Create a copy of ExoplanetModel
+  /// Create a copy of Exoplanet
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $ExoplanetModelCopyWith<ExoplanetModel> get copyWith =>
+  $ExoplanetCopyWith<Exoplanet> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ExoplanetModelCopyWith<$Res> {
-  factory $ExoplanetModelCopyWith(
-          ExoplanetModel value, $Res Function(ExoplanetModel) then) =
-      _$ExoplanetModelCopyWithImpl<$Res, ExoplanetModel>;
+abstract class $ExoplanetCopyWith<$Res> {
+  factory $ExoplanetCopyWith(Exoplanet value, $Res Function(Exoplanet) then) =
+      _$ExoplanetCopyWithImpl<$Res, Exoplanet>;
   @useResult
   $Res call(
       {String hostName,
@@ -86,16 +85,16 @@ abstract class $ExoplanetModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ExoplanetModelCopyWithImpl<$Res, $Val extends ExoplanetModel>
-    implements $ExoplanetModelCopyWith<$Res> {
-  _$ExoplanetModelCopyWithImpl(this._value, this._then);
+class _$ExoplanetCopyWithImpl<$Res, $Val extends Exoplanet>
+    implements $ExoplanetCopyWith<$Res> {
+  _$ExoplanetCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ExoplanetModel
+  /// Create a copy of Exoplanet
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -237,11 +236,11 @@ class _$ExoplanetModelCopyWithImpl<$Res, $Val extends ExoplanetModel>
 }
 
 /// @nodoc
-abstract class _$$ExoplanetModelImplCopyWith<$Res>
-    implements $ExoplanetModelCopyWith<$Res> {
-  factory _$$ExoplanetModelImplCopyWith(_$ExoplanetModelImpl value,
-          $Res Function(_$ExoplanetModelImpl) then) =
-      __$$ExoplanetModelImplCopyWithImpl<$Res>;
+abstract class _$$ExoplanetImplCopyWith<$Res>
+    implements $ExoplanetCopyWith<$Res> {
+  factory _$$ExoplanetImplCopyWith(
+          _$ExoplanetImpl value, $Res Function(_$ExoplanetImpl) then) =
+      __$$ExoplanetImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -274,14 +273,14 @@ abstract class _$$ExoplanetModelImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ExoplanetModelImplCopyWithImpl<$Res>
-    extends _$ExoplanetModelCopyWithImpl<$Res, _$ExoplanetModelImpl>
-    implements _$$ExoplanetModelImplCopyWith<$Res> {
-  __$$ExoplanetModelImplCopyWithImpl(
-      _$ExoplanetModelImpl _value, $Res Function(_$ExoplanetModelImpl) _then)
+class __$$ExoplanetImplCopyWithImpl<$Res>
+    extends _$ExoplanetCopyWithImpl<$Res, _$ExoplanetImpl>
+    implements _$$ExoplanetImplCopyWith<$Res> {
+  __$$ExoplanetImplCopyWithImpl(
+      _$ExoplanetImpl _value, $Res Function(_$ExoplanetImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ExoplanetModel
+  /// Create a copy of Exoplanet
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -313,7 +312,7 @@ class __$$ExoplanetModelImplCopyWithImpl<$Res>
     Object? dateLastUpdate = null,
     Object? releaseDate = null,
   }) {
-    return _then(_$ExoplanetModelImpl(
+    return _then(_$ExoplanetImpl(
       hostName: null == hostName
           ? _value.hostName
           : hostName // ignore: cast_nullable_to_non_nullable
@@ -424,8 +423,8 @@ class __$$ExoplanetModelImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ExoplanetModelImpl implements _ExoplanetModel {
-  const _$ExoplanetModelImpl(
+class _$ExoplanetImpl implements _Exoplanet {
+  const _$ExoplanetImpl(
       {required this.hostName,
       required this.planetName,
       required this.planetLetter,
@@ -508,14 +507,14 @@ class _$ExoplanetModelImpl implements _ExoplanetModel {
 
   @override
   String toString() {
-    return 'ExoplanetModel(hostName: $hostName, planetName: $planetName, planetLetter: $planetLetter, hdID: $hdID, hipID: $hipID, ticID: $ticID, gaiaID: $gaiaID, starsNumber: $starsNumber, planetsNumber: $planetsNumber, moonsNumber: $moonsNumber, discoveryMethod: $discoveryMethod, discoveryYear: $discoveryYear, discoveryReference: $discoveryReference, discoveryPublicationDate: $discoveryPublicationDate, discoveryLocale: $discoveryLocale, discoveryFacility: $discoveryFacility, discoveryTelescope: $discoveryTelescope, discoveryInstrument: $discoveryInstrument, orbitalPeriod: $orbitalPeriod, planetRadius: $planetRadius, planetMass: $planetMass, equilibriumTemperature: $equilibriumTemperature, spectralType: $spectralType, distance: $distance, dateLastUpdate: $dateLastUpdate, releaseDate: $releaseDate)';
+    return 'Exoplanet(hostName: $hostName, planetName: $planetName, planetLetter: $planetLetter, hdID: $hdID, hipID: $hipID, ticID: $ticID, gaiaID: $gaiaID, starsNumber: $starsNumber, planetsNumber: $planetsNumber, moonsNumber: $moonsNumber, discoveryMethod: $discoveryMethod, discoveryYear: $discoveryYear, discoveryReference: $discoveryReference, discoveryPublicationDate: $discoveryPublicationDate, discoveryLocale: $discoveryLocale, discoveryFacility: $discoveryFacility, discoveryTelescope: $discoveryTelescope, discoveryInstrument: $discoveryInstrument, orbitalPeriod: $orbitalPeriod, planetRadius: $planetRadius, planetMass: $planetMass, equilibriumTemperature: $equilibriumTemperature, spectralType: $spectralType, distance: $distance, dateLastUpdate: $dateLastUpdate, releaseDate: $releaseDate)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ExoplanetModelImpl &&
+            other is _$ExoplanetImpl &&
             (identical(other.hostName, hostName) ||
                 other.hostName == hostName) &&
             (identical(other.planetName, planetName) ||
@@ -598,18 +597,17 @@ class _$ExoplanetModelImpl implements _ExoplanetModel {
         releaseDate
       ]);
 
-  /// Create a copy of ExoplanetModel
+  /// Create a copy of Exoplanet
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$ExoplanetModelImplCopyWith<_$ExoplanetModelImpl> get copyWith =>
-      __$$ExoplanetModelImplCopyWithImpl<_$ExoplanetModelImpl>(
-          this, _$identity);
+  _$$ExoplanetImplCopyWith<_$ExoplanetImpl> get copyWith =>
+      __$$ExoplanetImplCopyWithImpl<_$ExoplanetImpl>(this, _$identity);
 }
 
-abstract class _ExoplanetModel implements ExoplanetModel {
-  const factory _ExoplanetModel(
+abstract class _Exoplanet implements Exoplanet {
+  const factory _Exoplanet(
       {required final String hostName,
       required final String planetName,
       required final String planetLetter,
@@ -635,7 +633,7 @@ abstract class _ExoplanetModel implements ExoplanetModel {
       required final String spectralType,
       required final String distance,
       required final DateTime dateLastUpdate,
-      required final DateTime releaseDate}) = _$ExoplanetModelImpl;
+      required final DateTime releaseDate}) = _$ExoplanetImpl;
 
   @override
   String get hostName;
@@ -690,10 +688,10 @@ abstract class _ExoplanetModel implements ExoplanetModel {
   @override
   DateTime get releaseDate;
 
-  /// Create a copy of ExoplanetModel
+  /// Create a copy of Exoplanet
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ExoplanetModelImplCopyWith<_$ExoplanetModelImpl> get copyWith =>
+  _$$ExoplanetImplCopyWith<_$ExoplanetImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

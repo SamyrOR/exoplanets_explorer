@@ -1,10 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'exoplanet_model.freezed.dart';
+part 'exoplanet.freezed.dart';
 
 @freezed
-class ExoplanetModel with _$ExoplanetModel {
-  const factory ExoplanetModel({
+class Exoplanet with _$Exoplanet {
+  const factory Exoplanet({
     required String hostName,
     required String planetName,
     required String planetLetter,
@@ -31,5 +31,5 @@ class ExoplanetModel with _$ExoplanetModel {
     required String distance,
     required DateTime dateLastUpdate,
     required DateTime releaseDate,
-  }) = _ExoplanetModel;
+  }) = _Exoplanet;
 }
